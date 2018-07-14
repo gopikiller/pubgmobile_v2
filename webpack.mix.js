@@ -23,3 +23,5 @@ mix.sass('resources/assets/sass/frontend/app.scss', 'public/css/frontend.css')
 if (mix.inProduction() || process.env.npm_lifecycle_event !== 'hot') {
     mix.version();
 }
+
+mix.disableNotifications();

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a href="{{ route('frontend.index') }}" class="navbar-brand">{{ app_name() }}</a>
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('labels.general.toggle_navigation') }}">
@@ -15,7 +15,14 @@
                     @include('includes.partials.lang')
                 </li>
             @endif
+            <li class="nav-item"><a href="{{route('frontend.index')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.index')) }}">{{ __('navs.frontend.home') }}</a></li>
+            <li class="nav-item"><a href="{{route('frontend.tournament')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.tournament')) }}">{{ __('navs.frontend.tournament') }}</a></li>
 
+            <li class="nav-item"><a href="{{route('frontend.rules')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.rules')) }}">{{ __('navs.frontend.rules') }}</a></li>
+
+            <li class="nav-item"><a href="{{route('frontend.how_to_join')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.how_to_join')) }}">{{ __('navs.frontend.how_to_join') }}</a></li>
+
+            <li class="nav-item"><a href="{{route('frontend.contact')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.contact')) }}">{{ __('navs.frontend.contact') }}</a></li>
             @auth
                 <li class="nav-item"><a href="{{route('frontend.user.dashboard')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}">{{ __('navs.frontend.dashboard') }}</a></li>
             @endauth
@@ -41,8 +48,6 @@
                     </div>
                 </li>
             @endguest
-
-            <li class="nav-item"><a href="{{route('frontend.contact')}}" class="nav-link {{ active_class(Active::checkRoute('frontend.contact')) }}">{{ __('navs.frontend.contact') }}</a></li>
         </ul>
     </div>
 </nav>

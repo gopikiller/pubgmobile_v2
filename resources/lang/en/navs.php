@@ -24,6 +24,10 @@ return [
         'login'     => 'Login',
         'macros'    => 'Macros',
         'register'  => 'Register',
+        'home' => 'Home',
+        'tournament' => 'Tournament',
+        'how_to_join' => 'How To Join',
+        'rules' => 'Rules',
 
         'user' => [
             'account'         => 'My Account',

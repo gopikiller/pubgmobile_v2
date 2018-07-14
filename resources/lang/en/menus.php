@@ -37,6 +37,14 @@ return [
             ],
         ],
 
+        'tournament' => [
+            'title' => 'Tournament',
+            'all' => 'All Tournaments',
+            'create' => 'Create Tournament',
+            'edit' => 'Edit Tournament',
+            'main' => 'Tournament'
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',

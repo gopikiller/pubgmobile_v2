@@ -40,7 +40,27 @@
                         </li>
                     </ul>
                 </li>
+                {{-- Tournament --}}
+                <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/tournament*'), 'open') }}">
+                    <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/tournament*')) }}" href="#">
+                        <i class="icon-shield"></i> {{ __('menus.backend.tournament.title') }}
+                    </a>
+
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link {{ active_class(Active::checkUriPattern('admin/tournament/list*')) }}" href="{{ route('admin.tournament.list') }}">
+                                {{ __('menus.backend.tournament.all') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ active_class(Active::checkUriPattern('admin/tournament/create*')) }}" href="{{ route('admin.tournament.create') }}">
+                                {{ __('menus.backend.tournament.create') }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             @endif
+            
 
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
                 <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/log-viewer*')) }}" href="#">

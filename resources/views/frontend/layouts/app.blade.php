@@ -27,11 +27,13 @@
             @include('includes.partials.logged-in-as')
             @include('frontend.includes.nav')
 
-            <div class="container">
-                @include('includes.partials.messages')
-                @yield('content')
-            </div><!-- container -->
+            @include('includes.partials.messages')
+            @yield('content')
+            <footer>
+                &copy; Pubgmobile, 2018
+            </footer>
         </div><!-- #app -->
+
 
         <!-- Scripts -->
         @stack('before-scripts')

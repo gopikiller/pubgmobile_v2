@@ -80,6 +80,10 @@ return [
                     'total'          => 'user total|users total',
                 ],
 
+                'tournament' => [
+                    'management' => ''
+                ],
+
                 'tabs' => [
                     'titles' => [
                         'overview' => 'Overview',
@@ -121,6 +125,23 @@ return [
         'contact' => [
             'box_title' => 'Contact Us',
             'button' => 'Send Information',
+        ],
+
+        'tournament' => [
+            'page_title' => 'Tournament',
+            'sub_title' => 'Here you will find all the upcoming PUBG tournaments and results.',
+            'tournament_box_title' => 'Tournaments List',
+        ],
+
+        'rules' => [
+            'page_title' => 'Rules',
+            'sub_title' => 'Rules for playing the PUBG tournament.',
+        ],
+
+        'how_to_join' => [
+            'page_title' => 'How To Join',
+            'sub_title' => 'Here you will find all the upcoming PUBG tournaments and results.',
+            'tournament_box_title' => 'Tournaments List',
         ],
 
         'passwords' => [

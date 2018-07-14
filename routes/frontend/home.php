@@ -6,6 +6,9 @@
  */
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('contact', 'ContactController@index')->name('contact');
+Route::get('tournament', 'TournamentController@index')->name('tournament');
+Route::get('rules', 'RulesController@index')->name('rules');
+Route::get('how-to-join', 'HowToJoinController@index')->name('how_to_join');
 Route::post('contact/send', 'ContactController@send')->name('contact.send');
 
 /*

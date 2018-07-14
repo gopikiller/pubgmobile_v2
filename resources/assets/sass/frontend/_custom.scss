@@ -1,1 +1,51 @@
 // Override the Bootstrap defaults without modifying key, versioned files.
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.break-word{
+    word-wrap: break-word;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+caption { 
+    display: table-caption;
+    caption-side: top;
+}
+
+.jumbotron{
+    background: linear-gradient(
+        rgba(31, 31, 31, 0.80), 
+        rgba(3, 65, 13, 0.45)
+      ), url('/img/frontend/02-pubgw710h4732x0-w1200-o.jpg');
+    background-size: cover;
+    background-position:0 30%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #343A40;
+    text-align: center;
+    color: white;
+}
+
