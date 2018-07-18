@@ -80,10 +80,6 @@ return [
                     'total'          => 'user total|users total',
                 ],
 
-                'tournament' => [
-                    'management' => ''
-                ],
-
                 'tabs' => [
                     'titles' => [
                         'overview' => 'Overview',
@@ -109,6 +105,26 @@ return [
                 'view' => 'View User',
             ],
         ],
+        'tournament' => [
+            'create'     => 'Create Tournament',
+            'edit'       => 'Edit Tournament',
+            'management' => 'Tournament Management',
+            'table' => [
+                'name'      => 'Name',
+                'date'      => 'Date',
+                'time'      => 'Time',
+                'fee'       => 'Fee',
+                'prize'     => 'Prize',
+                'type'      => 'Type',
+                'status'    => [
+                    'title' => 'Status',
+                    'null'  => 'Created',
+                    'zero'  => 'Over',
+                    'one'   => 'Playing'
+                ]
+                 
+            ]
+        ]
     ],
 
     'frontend' => [

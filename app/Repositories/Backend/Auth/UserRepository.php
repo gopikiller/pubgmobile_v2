@@ -99,11 +99,13 @@ class UserRepository extends BaseRepository
      */
     public function create(array $data) : User
     {
+        dd($data);
         return DB::transaction(function () use ($data) {
             $user = parent::create([
                 'first_name' => $data['first_name'],
                 'last_name' => $data['last_name'],
                 'email' => $data['email'],
+                'mobile_number' => $data['mobile_number'],
                 'timezone' => $data['timezone'],
                 'password' => $data['password'],
                 'active' => isset($data['active']) && $data['active'] == '1' ? 1 : 0,

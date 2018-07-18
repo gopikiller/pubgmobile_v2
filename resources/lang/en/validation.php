@@ -184,6 +184,17 @@ return [
                     'language'                => 'Language',
                 ],
             ],
+
+            'tournament' => [
+                'name' => 'Tournament Name',
+                'date' => 'Date',
+                'time' => 'Time',
+                'fee'  => 'Fee',
+                'prize'=> 'Prize',
+                'type' => 'Type',
+                'max_team' => 'Max Team',
+                'min_team' => 'Min Team'
+            ]
         ],
 
         'frontend' => [
@@ -201,6 +212,7 @@ return [
             'old_password'              => 'Old Password',
             'timezone'                  => 'Timezone',
             'language'                  => 'Language',
+            'mobile_number'             => 'Mobile Number',
         ],
     ],
 ];

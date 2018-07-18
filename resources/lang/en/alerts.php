@@ -34,6 +34,11 @@ return [
             'updated'             => 'The user was successfully updated.',
             'updated_password'    => "The user's password was successfully updated.",
         ],
+        'tournaments' => [
+            'created' => 'The Tournament was successfully created.',
+            'deleted' => 'The Tournament was successfully deleted.',
+            'updated' => 'The Tournament was successfully updated.',
+        ]
     ],
 
     'frontend' => [

@@ -56,6 +56,20 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
+                                    {{ html()->label(__('validation.attributes.frontend.mobile_number'))->for('mobile_number') }}
+
+                                    {{ html()->text('mobile_number')
+                                        ->class('form-control')
+                                        ->placeholder(__('validation.attributes.frontend.mobile_number'))
+                                        ->attribute('maxlength', 10)
+                                        ->required() }}
+                                </div><!--form-group-->
+                            </div><!--col-->
+                        </div><!--row-->
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
                                     {{ html()->label(__('validation.attributes.frontend.password'))->for('password') }}
 
                                     {{ html()->password('password')

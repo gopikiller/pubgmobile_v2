@@ -85,7 +85,6 @@ $(document).ready(function($){
     $('a[href="#"][data-top!=true]').click(function(e){
         e.preventDefault();
     });
-
 });
 
 function capitalizeFirstLetter(string) {
@@ -101,3 +100,4 @@ function init(url) {
     $('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
 }
+
